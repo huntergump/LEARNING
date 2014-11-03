@@ -73,5 +73,6 @@ func main() {
 		return string(jsonstring)
 	})
 
+	server.Use(martini.Static("app"))
 	server.Run()
 }

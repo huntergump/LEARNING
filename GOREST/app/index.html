@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="adminp" xmlns:ng="http://angularjs.org">
+    <head>
+        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body ng-controller="adminpController as ajusers">
+
+        <table class="table">
+            <tr ng-repeat="user in ajusers.users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+            </tr>
+        </table>
+
+        <script type="text/javascript" src="libs/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </body>
+</html>
