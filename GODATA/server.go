@@ -1,0 +1,11 @@
+package server
+
+import "github.com/go-martini/martini"
+
+func server() {
+	m := martini.Classic()
+	m.Get("/", func() string {
+		return "Hello World"
+	})
+	m.Run()
+}
